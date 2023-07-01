@@ -26,7 +26,7 @@ class HachGenerator
             while((word = reader.readLine()) != null)
             {                
                 HachGenerator h = new HachGenerator() ;
-                h.addWord(word.toLowerCase()) ;
+                h.addWord(word) ;
 
             }
 
@@ -46,7 +46,6 @@ class HachGenerator
        {
         MessageDigest msg = MessageDigest.getInstance("MD5");
         byte[] hash = msg.digest(word.getBytes(StandardCharsets.UTF_8));
-             //can use isEquals of messageDigest
         StringBuilder sb = new StringBuilder();
         for (byte b : hash) {
             sb.append(Integer.toString((b & 0xff) + 0x100, 16).substring(1));

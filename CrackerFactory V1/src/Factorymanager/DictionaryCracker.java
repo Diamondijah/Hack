@@ -1,5 +1,7 @@
 import java.io.BufferedReader ;
+import java.io.BufferedWriter;
 import java.io.FileReader ;
+import java.io.FileWriter;
 import java.io.IOException ;
 
 // c'est une classe cracker qui utilise la methode du dictionnaire
@@ -31,5 +33,18 @@ class DictionaryCracker extends Cracker
           
            
        } 
+
+       public static void addWordToDico(String word){
+         try{
+         BufferedWriter writer = new BufferedWriter(new FileWriter("../files/dico.txt",true)) ;
+          writer.write(word+"\n") ;
+          writer.close() ;  
+            }
+            catch(IOException e)
+           {
+            e.printStackTrace() ;
+           }
+
+        }
    
 }
