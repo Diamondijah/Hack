@@ -1,5 +1,2 @@
-pasbon,pasbon
-baxoul,baxoul
-tabaski,hasg
 Diamondijah,motdepasse1
 Sokhna,motdepasse2

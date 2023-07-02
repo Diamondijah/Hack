@@ -1,0 +1,10 @@
+cette methode utilise :
+une page de login qui en cas de succés vous rediriges vers succes.php et en cas dechec vers echec.php
+une base de données bdd.txt qui contient les valeurs correctes des utilisateurs
+une base de données test.txt qui sert de test 
+un fichier tests.php qui permet de craquer la page login: inspirée de la methode de dictionnaire 
+, le code parcourt test.txt et bombarde la page de login avec des requetes(POSTS) et affichent les resultats , 
+cependant je n'arrive pas à bien definir la condition qui fait qui dés qu'une connexion 
+reussie le programme puisse s'arreter.
+ Donc en attendant de regler le probleme jai trouvé une alternative:
+le fichier craquage.php permet d'afficher des la premiere reussite le nom d'utilisateur et le mot de passe qui a fonctionné.
